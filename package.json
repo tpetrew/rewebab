@@ -1,0 +1,55 @@
+{
+  "name": "rewebab",
+  "version": "1.0.0",
+  "description": "The empty [react, webpack, babel] template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack serve",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tpetrew/rewebab.git"
+  },
+  "keywords": [
+    "template"
+  ],
+  "author": "tpetrew",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tpetrew/rewebab/issues"
+  },
+  "homepage": "https://github.com/tpetrew/rewebab#readme",
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@svgr/webpack": "^6.2.1",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.6.0",
+    "eslint": "^8.11.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "less": "^4.1.2",
+    "less-loader": "^10.2.0",
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "ajv": "^8.10.0",
+    "axios": "^0.26.1",
+    "axios-mock-adapter": "^1.20.0",
+    "react": "^17.0.2",
+    "react-content-loader": "^6.2.0",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "react-router-dom": "^6.2.2"
+  }
+}
