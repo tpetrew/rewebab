@@ -4,7 +4,7 @@ const HTMLWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     mode: "development",
-    entry: ["@babel/polyfill", "./src/index.jsx"],
+    entry: ["@babel/polyfill", "./index.jsx"],
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "[name].[hash].js",
@@ -16,7 +16,7 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin(),
-        new HTMLWebpackPlugin({ template: "./src/index.html" }),
+        new HTMLWebpackPlugin({ favicon: "./favicon.ico", filename: "index.html", template: "./index.html" }),
     ],
     resolve: {
         extensions: ['.js', '.jsx'],
@@ -24,8 +24,8 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(css|sass)$/,
-                use: ["style-loader", "css-loader", "sass-loader"],
+                test: /\.(css)$/,
+                use: ["style-loader", "css-loader"],
             },
             {
                 test: /\.(jpg|png|svg|gif|jpeg)$/,
